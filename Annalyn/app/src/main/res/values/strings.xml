@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Annalyn</string>
+    <string name="btn_start">Iniciar Jogo</string>
+    <string name="img_start">Imagem inicial</string>
+    <string name="img_verify">Imagem verificação</string>
+    <string name="swt_game_mode_description">Opções de jogo</string>
+    <string name="swt_game_mode_on">Aleatório</string>
+    <string name="swt_game_mode_off">Manual</string>
+    <string name="swt_knight">Cavaleiro</string>
+    <string name="swt_archer">Arqueiro</string>
+    <string name="swt_prisoner">Prisioneiro</string>
+    <string name="txt_start">Ajude Annalyn a salvar seu amigo.
+        Escolha quais personagens estão acordados e inicie o jogo.</string>
+    <string name="txt_verify">Annalyn encontra seu amigo e precisa saber como vai salvá-lo. Escolha verificação Annalyn fará para tentar descobrir quem está acordado no acampamento. </string>
+    <string name="txt_action_describe">Annalyn descobre que os seguintes personagens estão acordados:</string>
+    <string name="btn_spy">Espiar</string>
+    <string name="btn_attack">Atacar</string>
+    <string name="btn_sign">Assoviar</string>
+    <string name="btn_free">Libertar</string>
+    <string name="btn_back">Voltar</string>
+    <string name="title_activity_action">activity_action</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

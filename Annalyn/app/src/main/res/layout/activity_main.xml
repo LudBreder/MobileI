@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="@color/button"
+        android:onClick="startGame"
+        android:text="@string/btn_start"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swt_prisoner"
+        tools:text="@string/btn_start" />
+
+    <TextView
+        android:id="@+id/txt_start"
+        android:layout_width="326dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="140dp"
+        android:text="@string/txt_start"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852"
+        tools:text="@string/txt_start" />
+
+    <ImageView
+        android:id="@+id/img_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="19dp"
+        android:contentDescription="@string/img_start"
+        app:layout_constraintBottom_toTopOf="@+id/txt_game_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/start_image" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:height="48dp"
+        android:splitTrack="true"
+        android:text="@string/swt_game_mode_off"
+        android:textColor="@color/black"
+        android:textOff="@string/swt_game_mode_on"
+        android:textOn="@string/swt_game_mode_off"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_game_description"
+        app:layout_constraintVertical_bias="0.5"
+        tools:text="@string/swt_game_mode_off" />
+
+    <TextView
+        android:id="@+id/txt_game_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/swt_game_mode_description"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_start"
+        app:layout_constraintVertical_bias="0.5"
+        tools:text="@string/swt_game_mode_description" />
+
+    <Switch
+        android:id="@+id/swt_knight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:text="@string/swt_knight"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/swt_archer"
+        app:layout_constraintEnd_toEndOf="@+id/swt_archer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/swt_archer"
+        app:layout_constraintTop_toBottomOf="@+id/txt_start" />
+
+    <Switch
+        android:id="@+id/swt_archer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:text="@string/swt_archer"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/swt_prisoner"
+        app:layout_constraintEnd_toEndOf="@+id/swt_prisoner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/swt_prisoner"
+        app:layout_constraintTop_toBottomOf="@+id/swt_knight" />
+
+    <Switch
+        android:id="@+id/swt_prisoner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:text="@string/swt_prisoner"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swt_archer"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
